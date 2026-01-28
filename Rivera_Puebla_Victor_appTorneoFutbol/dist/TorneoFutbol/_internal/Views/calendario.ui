@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormCalendario</class>
+ <widget class="QWidget" name="FormCalendario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calendario de Partidos</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="btnVolver">
+     <property name="text">
+      <string>← Volver</string>
+     </property>
+     <property name="maximumWidth">
+      <number>150</number>
+     </property>
+     <property name="minimumHeight">
+      <number>40</number>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblTitulo">
+     <property name="text">
+      <string>CALENDARIO DE PARTIDOS</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string>font-size: 24px; font-weight: bold; color: #2E7D32; padding: 10px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="contenedorPrincipal" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <!-- Lado izquierdo: Calendario -->
+       <widget class="QFrame" name="frameCalendario">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgba(255, 255, 255, 0.85); border-radius: 10px; padding: 15px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="lblTituloCalendario">
+           <property name="text">
+            <string>Selecciona una Fecha</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font-size: 16px; font-weight: bold; color: #2E7D32;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCalendarWidget" name="calendarWidget">
+           <property name="gridVisible">
+            <bool>true</bool>
+           </property>
+           <property name="locale">
+            <locale language="Spanish" country="Spain"/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnRegistrarPartido">
+           <property name="text">
+            <string>REGISTRAR PARTIDO EN ESTA FECHA</string>
+           </property>
+           <property name="minimumHeight">
+            <number>50</number>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <!-- Lado derecho: Lista de partidos -->
+       <widget class="QFrame" name="frameListaPartidos">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgba(255, 255, 255, 0.85); border-radius: 10px; padding: 15px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="lblTituloLista">
+           <property name="text">
+            <string>Partidos Programados</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font-size: 16px; font-weight: bold; color: #2E7D32;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollAreaPartidos">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>500</width>
+              <height>550</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QListWidget" name="listPartidos">
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

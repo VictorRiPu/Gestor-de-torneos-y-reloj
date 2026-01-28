@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogNuevoTorneo</class>
+ <widget class="QDialog" name="DialogNuevoTorneo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Crear Nuevo Torneo</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lblTitulo">
+     <property name="text">
+      <string>CREAR NUEVO TORNEO</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string>font-size: 24px; font-weight: bold; color: #FFD700; padding: 15px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frameFormulario">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="styleSheet">
+      <string>QFrame#frameFormulario { background: rgba(30, 40, 60, 0.95); border-radius: 10px; padding: 20px; } QLabel { color: #FFD700; }</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="lblNombre">
+        <property name="text">
+         <string>Nombre del Torneo:</string>
+        </property>
+        <property name="styleSheet">
+         <string>font-size: 14px; font-weight: bold; color: #FFD700;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtNombreTorneo">
+        <property name="placeholderText">
+         <string>Ej: Copa Escolar 2026</string>
+        </property>
+        <property name="minimumHeight">
+         <number>45</number>
+        </property>
+        <property name="styleSheet">
+         <string>padding: 10px; font-size: 14px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblInstrucciones">
+        <property name="text">
+         <string>Selecciona los equipos participantes (8, 16 o 32 equipos):</string>
+        </property>
+        <property name="styleSheet">
+         <string>font-size: 14px; font-weight: bold; padding-top: 10px; color: #FFD700;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblAdvertencia">
+        <property name="text">
+         <string>⚠ Cada equipo debe tener mínimo 7 jugadores registrados</string>
+        </property>
+        <property name="styleSheet">
+         <string>color: #FFA500; padding: 5px; font-weight: bold;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="scrollAreaEquipos">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>820</width>
+           <height>300</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QListWidget" name="listEquiposDisponibles">
+            <property name="selectionMode">
+             <enum>QAbstractItemView::MultiSelection</enum>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblEquiposSeleccionados">
+        <property name="text">
+         <string>Equipos seleccionados: 0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="styleSheet">
+         <string>font-size: 14px; font-weight: bold; color: #FFD700; padding: 10px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="botones" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnCancelar">
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+        <property name="minimumHeight">
+         <number>50</number>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCrearTorneo">
+        <property name="text">
+         <string>CREAR TORNEO</string>
+        </property>
+        <property name="minimumHeight">
+         <number>50</number>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

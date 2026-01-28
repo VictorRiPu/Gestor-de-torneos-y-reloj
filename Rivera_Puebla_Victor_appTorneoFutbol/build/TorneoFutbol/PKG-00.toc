@@ -1,0 +1,64 @@
+('C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+ 'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\build\\TorneoFutbol\\TorneoFutbol.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES '
+   'MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+   'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\build\\TorneoFutbol\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES '
+   'MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+   'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\build\\TorneoFutbol\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES '
+   'MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+   'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\build\\TorneoFutbol\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES '
+   'MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+   'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\build\\TorneoFutbol\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES '
+   'MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+   'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\build\\TorneoFutbol\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES '
+   'MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+   'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\build\\TorneoFutbol\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\River\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\River\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyside6',
+   'C:\\Users\\River\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyside6.py',
+   'PYSOURCE'),
+  ('main',
+   'C:\\Users\\River\\OneDrive\\Imágenes\\IMÁGENES '
+   'MÍAS\\Trabajo\\2ºDAM\\DI\\2º '
+   'trimestre\\Rivera_Puebla_Victor_integracion_reloj_y_gestor\\Rivera_Puebla_Victor_appTorneoFutbol\\main.py',
+   'PYSOURCE')],
+ 'python313.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)

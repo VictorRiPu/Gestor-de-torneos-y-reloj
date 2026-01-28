@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestión de Torneos de Fútbol</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <!-- Página Principal (índice 0) -->
+      <widget class="QWidget" name="pagina_principal">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <!-- Título superior -->
+         <widget class="QLabel" name="lblTitulo">
+          <property name="text">
+           <string>GESTIÓN DE TORNEOS DE FÚTBOL</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="styleSheet">
+           <string>
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+           </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="contenedorCentral" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <property name="leftMargin">
+            <number>50</number>
+           </property>
+           <property name="topMargin">
+            <number>30</number>
+           </property>
+           <property name="rightMargin">
+            <number>50</number>
+           </property>
+           <property name="bottomMargin">
+            <number>30</number>
+           </property>
+           <item>
+            <!-- Fila 1: Equipos/Participantes y Calendario -->
+            <widget class="QWidget" name="fila1" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="spacing">
+               <number>20</number>
+              </property>
+              <item>
+               <!-- Tarjeta Equipos/Participantes -->
+               <widget class="QFrame" name="frameEquiposParticipantes">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="styleSheet">
+                 <string>
+                  background: rgba(255, 255, 255, 0.85);
+                  border-radius: 10px;
+                  padding: 20px;
+                 </string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="lblTituloEquiposParticipantes">
+                   <property name="text">
+                    <string>Gestión de Datos</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="styleSheet">
+                    <string>
+                     font-size: 18px;
+                     font-weight: bold;
+                     color: #2E7D32;
+                    </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnEquipos">
+                   <property name="text">
+                    <string>EQUIPOS</string>
+                   </property>
+                   <property name="minimumHeight">
+                    <number>80</number>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnParticipantes">
+                   <property name="text">
+                    <string>PARTICIPANTES</string>
+                   </property>
+                   <property name="minimumHeight">
+                    <number>80</number>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <!-- Tarjeta Calendario -->
+               <widget class="QFrame" name="frameCalendario">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="styleSheet">
+                 <string>
+                  background: rgba(255, 255, 255, 0.85);
+                  border-radius: 10px;
+                  padding: 20px;
+                 </string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="lblTituloCalendario">
+                   <property name="text">
+                    <string>Calendario de Partidos</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="styleSheet">
+                    <string>
+                     font-size: 18px;
+                     font-weight: bold;
+                     color: #2E7D32;
+                    </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnCalendario">
+                   <property name="text">
+                    <string>CALENDARIO</string>
+                   </property>
+                   <property name="minimumHeight">
+                    <number>180</number>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <!-- Fila 2: Resultados y Clasificación -->
+            <widget class="QWidget" name="fila2" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>20</number>
+              </property>
+              <item>
+               <!-- Tarjeta Resultados -->
+               <widget class="QFrame" name="frameResultados">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="styleSheet">
+                 <string>
+                  background: rgba(255, 255, 255, 0.85);
+                  border-radius: 10px;
+                  padding: 20px;
+                 </string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="lblTituloResultados">
+                   <property name="text">
+                    <string>Resultados</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="styleSheet">
+                    <string>
+                     font-size: 18px;
+                     font-weight: bold;
+                     color: #2E7D32;
+                    </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnResultados">
+                   <property name="text">
+                    <string>REGISTRAR RESULTADOS</string>
+                   </property>
+                   <property name="minimumHeight">
+                    <number>150</number>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <!-- Tarjeta Clasificación -->
+               <widget class="QFrame" name="frameClasificacion">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="styleSheet">
+                 <string>
+                  background: rgba(255, 255, 255, 0.85);
+                  border-radius: 10px;
+                  padding: 20px;
+                 </string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="lblTituloClasificacion">
+                   <property name="text">
+                    <string>Clasificación</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="styleSheet">
+                    <string>
+                     font-size: 18px;
+                     font-weight: bold;
+                     color: #2E7D32;
+                    </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnClasificacion">
+                   <property name="text">
+                    <string>VER CLASIFICACIÓN</string>
+                   </property>
+                   <property name="minimumHeight">
+                    <number>150</number>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <!-- Botones inferiores -->
+            <widget class="QWidget" name="botonesInferiores" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="btnNuevoTorneo">
+                <property name="text">
+                 <string>NUEVO TORNEO</string>
+                </property>
+                <property name="minimumHeight">
+                 <number>50</number>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnFinalizarTorneo">
+                <property name="text">
+                 <string>FIN DE TORNEO</string>
+                </property>
+                <property name="minimumHeight">
+                 <number>50</number>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="visible">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <!-- Las demás páginas se cargarán dinámicamente desde otros .ui -->
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAyuda"/>
+    <addaction name="actionCreditos"/>
+   </widget>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <action name="actionAyuda">
+   <property name="text">
+    <string>Cómo usar la aplicación</string>
+   </property>
+  </action>
+  <action name="actionCreditos">
+   <property name="text">
+    <string>Créditos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogOnboarding</class>
+ <widget class="QDialog" name="DialogOnboarding">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ayuda - Cómo usar la aplicación</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QStackedWidget" name="stackedPasos">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <!-- Paso 1: Crear equipos y participantes -->
+     <widget class="QWidget" name="paso1">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="lblTituloPaso1">
+         <property name="text">
+          <string>Paso 1: Crear Equipos y Participantes</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="styleSheet">
+          <string>
+           font-size: 20px;
+           font-weight: bold;
+           color: #2E7D32;
+           padding: 10px;
+          </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTextoPaso1">
+         <property name="text">
+          <string>&lt;html&gt;&lt;body&gt;
+&lt;p style="font-size: 14px; line-height: 1.8;"&gt;
+&lt;b&gt;Equipos:&lt;/b&gt;&lt;br&gt;
+• Registra los equipos participantes&lt;br&gt;
+• Asigna un nombre, curso y color&lt;br&gt;
+• Selecciona un escudo único de la galería&lt;br&gt;
+• Cada equipo necesita mínimo 7 jugadores&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Participantes:&lt;/b&gt;&lt;br&gt;
+• Registra jugadores y árbitros&lt;br&gt;
+• Para jugadores: selecciona posición (Portero, Defensa, Centrocampista, Delantero)&lt;br&gt;
+• Para árbitros: solo datos básicos&lt;br&gt;
+• Necesitas al menos 1 árbitro para programar partidos&lt;br&gt;
+&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <!-- Paso 2: Iniciar torneo y programar partidos -->
+     <widget class="QWidget" name="paso2">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="lblTituloPaso2">
+         <property name="text">
+          <string>Paso 2: Iniciar Torneo y Calendario</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="styleSheet">
+          <string>
+           font-size: 20px;
+           font-weight: bold;
+           color: #2E7D32;
+           padding: 10px;
+          </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTextoPaso2">
+         <property name="text">
+          <string>&lt;html&gt;&lt;body&gt;
+&lt;p style="font-size: 14px; line-height: 1.8;"&gt;
+&lt;b&gt;Nuevo Torneo:&lt;/b&gt;&lt;br&gt;
+• Haz clic en "NUEVO TORNEO" desde el menú principal&lt;br&gt;
+• Selecciona 8, 16 o 32 equipos participantes&lt;br&gt;
+• La aplicación validará que cada equipo tenga al menos 7 jugadores&lt;br&gt;
+• Se generarán los emparejamientos automáticamente&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Calendario:&lt;/b&gt;&lt;br&gt;
+• Haz clic en un día del calendario para programar partidos&lt;br&gt;
+• Selecciona los equipos, fecha, hora y árbitro&lt;br&gt;
+• El sistema te avisará si un árbitro ya tiene partido en ese horario&lt;br&gt;
+• Puedes editar o eliminar partidos antes de registrar resultados&lt;br&gt;
+&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <!-- Paso 3: Registrar resultados -->
+     <widget class="QWidget" name="paso3">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="lblTituloPaso3">
+         <property name="text">
+          <string>Paso 3: Registrar Resultados</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="styleSheet">
+          <string>
+           font-size: 20px;
+           font-weight: bold;
+           color: #2E7D32;
+           padding: 10px;
+          </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTextoPaso3">
+         <property name="text">
+          <string>&lt;html&gt;&lt;body&gt;
+&lt;p style="font-size: 14px; line-height: 1.8;"&gt;
+&lt;b&gt;Resultados de Partidos:&lt;/b&gt;&lt;br&gt;
+• Selecciona un partido de la lista&lt;br&gt;
+• Se mostrarán los jugadores de ambos equipos en columnas&lt;br&gt;
+• Registra goles ingresando el número en cada jugador&lt;br&gt;
+• Marca tarjetas amarillas y rojas con los checkboxes&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Avance Automático:&lt;/b&gt;&lt;br&gt;
+• Al registrar resultado, el ganador avanza automáticamente&lt;br&gt;
+• Se crea el partido de la siguiente ronda&lt;br&gt;
+• Puedes editar resultados ya registrados si es necesario&lt;br&gt;
+&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <!-- Paso 4: Ver clasificación -->
+     <widget class="QWidget" name="paso4">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="lblTituloPaso4">
+         <property name="text">
+          <string>Paso 4: Ver Clasificación y Finalizar</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="styleSheet">
+          <string>
+           font-size: 20px;
+           font-weight: bold;
+           color: #2E7D32;
+           padding: 10px;
+          </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTextoPaso4">
+         <property name="text">
+          <string>&lt;html&gt;&lt;body&gt;
+&lt;p style="font-size: 14px; line-height: 1.8;"&gt;
+&lt;b&gt;Clasificación (Brackets):&lt;/b&gt;&lt;br&gt;
+• Visualiza el cuadro de eliminatorias completo&lt;br&gt;
+• Los logos de los equipos se muestran en cada nodo&lt;br&gt;
+• Las líneas conectan los partidos hasta la final&lt;br&gt;
+• Se actualiza automáticamente al registrar resultados&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Finalizar Torneo:&lt;/b&gt;&lt;br&gt;
+• Cuando termines, haz clic en "FIN DE TORNEO"&lt;br&gt;
+• Se marcará el torneo como finalizado&lt;br&gt;
+• Podrás iniciar un nuevo torneo cuando quieras&lt;br&gt;
+• Solo puede haber un torneo activo a la vez&lt;br&gt;
+&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <!-- Barra de progreso de pasos -->
+    <widget class="QWidget" name="barraProgreso" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="lblProgreso">
+        <property name="text">
+         <string>Paso 1 de 4</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="styleSheet">
+         <string>
+          font-size: 12px;
+          color: #666;
+         </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <!-- Botones de navegación -->
+    <widget class="QWidget" name="botonesNavegacion" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btnAnterior">
+        <property name="text">
+         <string>Anterior</string>
+        </property>
+        <property name="minimumHeight">
+         <number>40</number>
+        </property>
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSiguiente">
+        <property name="text">
+         <string>Siguiente</string>
+        </property>
+        <property name="minimumHeight">
+         <number>40</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCerrar">
+        <property name="text">
+         <string>Cerrar</string>
+        </property>
+        <property name="minimumHeight">
+         <number>40</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormResultados</class>
+ <widget class="QWidget" name="FormResultados">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Registro de Resultados</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="btnVolver">
+     <property name="text">
+      <string>← Volver</string>
+     </property>
+     <property name="maximumWidth">
+      <number>150</number>
+     </property>
+     <property name="minimumHeight">
+      <number>40</number>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblTitulo">
+     <property name="text">
+      <string>REGISTRO DE RESULTADOS</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string>font-size: 24px; font-weight: bold; color: #2E7D32; padding: 10px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="contenedorPrincipal" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <!-- Lado izquierdo: Lista de partidos (1/3) -->
+       <widget class="QFrame" name="frameListaPartidos">
+        <property name="maximumWidth">
+         <number>350</number>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgba(255, 255, 255, 0.85); border-radius: 10px; padding: 15px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="lblTituloPartidos">
+           <property name="text">
+            <string>Selecciona un Partido</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font-size: 16px; font-weight: bold; color: #2E7D32;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listPartidos">
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblResumen">
+           <property name="text">
+            <string>Resumen:</string>
+           </property>
+           <property name="styleSheet">
+            <string>font-weight: bold; padding: 10px; background: rgba(240, 240, 240, 0.8); border-radius: 5px;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="minimumHeight">
+            <number>80</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <!-- Lado derecho: Detalles del partido (2/3) -->
+       <widget class="QFrame" name="frameDetallesPartido">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgba(255, 255, 255, 0.85); border-radius: 10px; padding: 15px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="lblInfoPartido">
+           <property name="text">
+            <string>Selecciona un partido para registrar resultado</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font-size: 14px; color: #666;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <!-- Contenedor de equipos -->
+          <widget class="QWidget" name="contenedorEquipos" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <item>
+             <!-- Equipo A -->
+             <widget class="QFrame" name="frameEquipoA">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="styleSheet">
+               <string>background: rgba(240, 240, 240, 0.9); border-radius: 5px; padding: 10px;</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QLabel" name="lblNombreEquipoA">
+                 <property name="text">
+                  <string>Equipo A</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="styleSheet">
+                  <string>font-size: 18px; font-weight: bold;</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="lblEscudoEquipoA">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="minimumHeight">
+                  <number>80</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTableWidget" name="tableJugadoresA">
+                 <property name="columnCount">
+                  <number>3</number>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>Jugador</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Tarjetas</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Goles</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblVS">
+              <property name="text">
+               <string>VS</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="styleSheet">
+               <string>font-size: 24px; font-weight: bold; color: #2E7D32;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <!-- Equipo B -->
+             <widget class="QFrame" name="frameEquipoB">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="styleSheet">
+               <string>background: rgba(240, 240, 240, 0.9); border-radius: 5px; padding: 10px;</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QLabel" name="lblNombreEquipoB">
+                 <property name="text">
+                  <string>Equipo B</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="styleSheet">
+                  <string>font-size: 18px; font-weight: bold;</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="lblEscudoEquipoB">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="minimumHeight">
+                  <number>80</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTableWidget" name="tableJugadoresB">
+                 <property name="columnCount">
+                  <number>3</number>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>Jugador</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Tarjetas</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Goles</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnRegistrar">
+           <property name="text">
+            <string>REGISTRAR RESULTADO</string>
+           </property>
+           <property name="minimumHeight">
+            <number>50</number>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

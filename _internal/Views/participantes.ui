@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormParticipantes</class>
+ <widget class="QWidget" name="FormParticipantes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestión de Participantes</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="btnVolver">
+     <property name="text">
+      <string>← Volver</string>
+     </property>
+     <property name="maximumWidth">
+      <number>150</number>
+     </property>
+     <property name="minimumHeight">
+      <number>40</number>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblTitulo">
+     <property name="text">
+      <string>GESTIÓN DE PARTICIPANTES</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string>font-size: 24px; font-weight: bold; color: #2E7D32; padding: 10px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <!-- Contenedor principal dividido -->
+    <widget class="QWidget" name="contenedorPrincipal" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <!-- Lado izquierdo: Formulario -->
+       <widget class="QFrame" name="frameFormulario">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgba(255, 255, 255, 0.85); border-radius: 10px; padding: 15px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="lblTituloFormulario">
+           <property name="text">
+            <string>Datos del Participante</string>
+           </property>
+           <property name="styleSheet">
+            <string>font-size: 18px; font-weight: bold; color: #2E7D32;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblNombre">
+           <property name="text">
+            <string>Nombre Completo:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txtNombre">
+           <property name="placeholderText">
+            <string>Ej: Juan Pérez García</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblFechaNacimiento">
+           <property name="text">
+            <string>Fecha de Nacimiento:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="dateFechaNacimiento">
+           <property name="displayFormat">
+            <string>dd/MM/yyyy</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblCurso">
+           <property name="text">
+            <string>Curso:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboCurso">
+           <item>
+            <property name="text">
+             <string>1º ESO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2º ESO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3º ESO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4º ESO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1º Bachillerato</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2º Bachillerato</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1º DAM</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2º DAM</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblTipo">
+           <property name="text">
+            <string>Tipo de Participante:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboTipo">
+           <item>
+            <property name="text">
+             <string>Jugador</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Árbitro</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ambos</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <!-- Frame de datos de jugador (siempre visible para tipo Jugador) -->
+          <widget class="QFrame" name="frameDatosJugador">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="visible">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string>background: rgba(240, 240, 240, 0.9); border-radius: 5px; padding: 10px;</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="lblDatosJugador">
+              <property name="text">
+               <string>Datos de Jugador</string>
+              </property>
+              <property name="styleSheet">
+               <string>font-weight: bold; color: #2E7D32;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblPosicion">
+              <property name="text">
+               <string>Posición:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboPosicion">
+              <item>
+               <property name="text">
+                <string>Portero</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Defensa</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Centrocampista</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Delantero</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblEquipo">
+              <property name="text">
+               <string>Equipo:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboEquipo">
+              <property name="placeholderText">
+               <string>Seleccionar equipo...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnGuardar">
+           <property name="text">
+            <string>GUARDAR PARTICIPANTE</string>
+           </property>
+           <property name="minimumHeight">
+            <number>50</number>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnLimpiar">
+           <property name="text">
+            <string>Limpiar Formulario</string>
+           </property>
+           <property name="minimumHeight">
+            <number>40</number>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <!-- Lado derecho: Lista de participantes -->
+       <widget class="QFrame" name="frameLista">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="styleSheet">
+         <string>background: rgba(255, 255, 255, 0.85); border-radius: 10px; padding: 15px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="lblTituloLista">
+           <property name="text">
+            <string>Participantes Registrados</string>
+           </property>
+           <property name="styleSheet">
+            <string>font-size: 18px; font-weight: bold; color: #2E7D32;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblBuscar">
+           <property name="text">
+            <string>Buscar por nombre o curso:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txtBuscar">
+           <property name="placeholderText">
+            <string>Escribe para filtrar...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblFiltroTipo">
+           <property name="text">
+            <string>Filtrar por tipo:</string>
+           </property>
+           <property name="styleSheet">
+            <string>font-weight: bold; margin-top: 10px;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widgetFiltros" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_filtros">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <item>
+             <widget class="QCheckBox" name="chkTodos">
+              <property name="text">
+               <string>Todos</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkJugadores">
+              <property name="text">
+               <string>Jugadores</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chkArbitros">
+              <property name="text">
+               <string>Árbitros</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_filtros">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollAreaParticipantes">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>400</width>
+              <height>500</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QListWidget" name="listParticipantes">
+               <property name="alternatingRowColors">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnEliminar">
+           <property name="text">
+            <string>🗑️ Eliminar Seleccionado</string>
+           </property>
+           <property name="minimumHeight">
+            <number>40</number>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string>background-color: #d32f2f; color: white; font-weight: bold;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
