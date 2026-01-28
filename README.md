@@ -1,5 +1,9 @@
 # Gestor de Torneos de Fútbol con Reloj Integrado
 
+**Autor:** Víctor Rivera Puebla  
+**Versión:** 1.0  
+**Curso:** 2º DAM - 2026
+
 Este proyecto es una aplicación de escritorio para la gestión de torneos de fútbol, que incluye un reloj digital integrado. Permite organizar equipos, gestionar calendarios, clasificaciones, resultados y participantes de manera sencilla y visual.
 
 ## Estructura del Proyecto
