@@ -47,4 +47,4 @@ La aplicación está dividida en dos módulos principales:
 - La estructura modular permite ampliar fácilmente la funcionalidad del gestor o del reloj.
 
 ---
-Desarrollado para fines educativos en 2º DAM - Desarrollo de Interfaces.
+
